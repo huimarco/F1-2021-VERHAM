@@ -1,0 +1,436 @@
+,index,Pos,Driver,Car,race_name,race_year,race_num
+0,0,1,Max Verstappen VER,Red Bull Racing Honda,bahrain,2021,1064
+1,1,2,Lewis Hamilton HAM,Mercedes,bahrain,2021,1064
+2,2,3,Valtteri Bottas BOT,Mercedes,bahrain,2021,1064
+3,3,4,Charles Leclerc LEC,Ferrari,bahrain,2021,1064
+4,4,5,Pierre Gasly GAS,AlphaTauri Honda,bahrain,2021,1064
+5,5,6,Daniel Ricciardo RIC,McLaren Mercedes,bahrain,2021,1064
+6,6,7,Lando Norris NOR,McLaren Mercedes,bahrain,2021,1064
+7,7,8,Carlos Sainz SAI,Ferrari,bahrain,2021,1064
+8,8,9,Fernando Alonso ALO,Alpine Renault,bahrain,2021,1064
+9,9,10,Lance Stroll STR,Aston Martin Mercedes,bahrain,2021,1064
+10,10,11,Sergio Perez PER,Red Bull Racing Honda,bahrain,2021,1064
+11,11,12,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,bahrain,2021,1064
+12,12,13,Yuki Tsunoda TSU,AlphaTauri Honda,bahrain,2021,1064
+13,13,14,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,bahrain,2021,1064
+14,14,15,George Russell RUS,Williams Mercedes,bahrain,2021,1064
+15,15,16,Esteban Ocon OCO,Alpine Renault,bahrain,2021,1064
+16,16,17,Nicholas Latifi LAT,Williams Mercedes,bahrain,2021,1064
+17,17,18,Mick Schumacher MSC,Haas Ferrari,bahrain,2021,1064
+18,18,19,Nikita Mazepin MAZ,Haas Ferrari,bahrain,2021,1064
+19,19,20,Sebastian Vettel VET,Aston Martin Mercedes,bahrain,2021,1064
+20,0,1,Lewis Hamilton HAM,Mercedes,italy,2021,1065
+21,1,2,Sergio Perez PER,Red Bull Racing Honda,italy,2021,1065
+22,2,3,Max Verstappen VER,Red Bull Racing Honda,italy,2021,1065
+23,3,4,Charles Leclerc LEC,Ferrari,italy,2021,1065
+24,4,5,Pierre Gasly GAS,AlphaTauri Honda,italy,2021,1065
+25,5,6,Daniel Ricciardo RIC,McLaren Mercedes,italy,2021,1065
+26,6,7,Lando Norris NOR,McLaren Mercedes,italy,2021,1065
+27,7,8,Valtteri Bottas BOT,Mercedes,italy,2021,1065
+28,8,9,Esteban Ocon OCO,Alpine Renault,italy,2021,1065
+29,9,10,Lance Stroll STR,Aston Martin Mercedes,italy,2021,1065
+30,10,11,Carlos Sainz SAI,Ferrari,italy,2021,1065
+31,11,12,George Russell RUS,Williams Mercedes,italy,2021,1065
+32,12,13,Sebastian Vettel VET,Aston Martin Mercedes,italy,2021,1065
+33,13,14,Nicholas Latifi LAT,Williams Mercedes,italy,2021,1065
+34,14,15,Fernando Alonso ALO,Alpine Renault,italy,2021,1065
+35,15,16,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,italy,2021,1065
+36,16,17,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,italy,2021,1065
+37,17,18,Mick Schumacher MSC,Haas Ferrari,italy,2021,1065
+38,18,19,Nikita Mazepin MAZ,Haas Ferrari,italy,2021,1065
+39,19,20,Yuki Tsunoda TSU,AlphaTauri Honda,italy,2021,1065
+40,0,1,Valtteri Bottas BOT,Mercedes,portugal,2021,1066
+41,1,2,Lewis Hamilton HAM,Mercedes,portugal,2021,1066
+42,2,3,Max Verstappen VER,Red Bull Racing Honda,portugal,2021,1066
+43,3,4,Sergio Perez PER,Red Bull Racing Honda,portugal,2021,1066
+44,4,5,Carlos Sainz SAI,Ferrari,portugal,2021,1066
+45,5,6,Esteban Ocon OCO,Alpine Renault,portugal,2021,1066
+46,6,7,Lando Norris NOR,McLaren Mercedes,portugal,2021,1066
+47,7,8,Charles Leclerc LEC,Ferrari,portugal,2021,1066
+48,8,9,Pierre Gasly GAS,AlphaTauri Honda,portugal,2021,1066
+49,9,10,Sebastian Vettel VET,Aston Martin Mercedes,portugal,2021,1066
+50,10,11,George Russell RUS,Williams Mercedes,portugal,2021,1066
+51,11,12,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,portugal,2021,1066
+52,12,13,Fernando Alonso ALO,Alpine Renault,portugal,2021,1066
+53,13,14,Yuki Tsunoda TSU,AlphaTauri Honda,portugal,2021,1066
+54,14,15,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,portugal,2021,1066
+55,15,16,Daniel Ricciardo RIC,McLaren Mercedes,portugal,2021,1066
+56,16,17,Lance Stroll STR,Aston Martin Mercedes,portugal,2021,1066
+57,17,18,Nicholas Latifi LAT,Williams Mercedes,portugal,2021,1066
+58,18,19,Mick Schumacher MSC,Haas Ferrari,portugal,2021,1066
+59,19,20,Nikita Mazepin MAZ,Haas Ferrari,portugal,2021,1066
+60,0,1,Lewis Hamilton HAM,Mercedes,spain,2021,1086
+61,1,2,Max Verstappen VER,Red Bull Racing Honda,spain,2021,1086
+62,2,3,Valtteri Bottas BOT,Mercedes,spain,2021,1086
+63,3,4,Charles Leclerc LEC,Ferrari,spain,2021,1086
+64,4,5,Esteban Ocon OCO,Alpine Renault,spain,2021,1086
+65,5,6,Carlos Sainz SAI,Ferrari,spain,2021,1086
+66,6,7,Daniel Ricciardo RIC,McLaren Mercedes,spain,2021,1086
+67,7,8,Sergio Perez PER,Red Bull Racing Honda,spain,2021,1086
+68,8,9,Lando Norris NOR,McLaren Mercedes,spain,2021,1086
+69,9,10,Fernando Alonso ALO,Alpine Renault,spain,2021,1086
+70,10,11,Lance Stroll STR,Aston Martin Mercedes,spain,2021,1086
+71,11,12,Pierre Gasly GAS,AlphaTauri Honda,spain,2021,1086
+72,12,13,Sebastian Vettel VET,Aston Martin Mercedes,spain,2021,1086
+73,13,14,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,spain,2021,1086
+74,14,15,George Russell RUS,Williams Mercedes,spain,2021,1086
+75,15,16,Yuki Tsunoda TSU,AlphaTauri Honda,spain,2021,1086
+76,16,17,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,spain,2021,1086
+77,17,18,Mick Schumacher MSC,Haas Ferrari,spain,2021,1086
+78,18,19,Nicholas Latifi LAT,Williams Mercedes,spain,2021,1086
+79,19,20,Nikita Mazepin MAZ,Haas Ferrari,spain,2021,1086
+80,0,1,Charles Leclerc LEC,Ferrari,monaco,2021,1067
+81,1,2,Max Verstappen VER,Red Bull Racing Honda,monaco,2021,1067
+82,2,3,Valtteri Bottas BOT,Mercedes,monaco,2021,1067
+83,3,4,Carlos Sainz SAI,Ferrari,monaco,2021,1067
+84,4,5,Lando Norris NOR,McLaren Mercedes,monaco,2021,1067
+85,5,6,Pierre Gasly GAS,AlphaTauri Honda,monaco,2021,1067
+86,6,7,Lewis Hamilton HAM,Mercedes,monaco,2021,1067
+87,7,8,Sebastian Vettel VET,Aston Martin Mercedes,monaco,2021,1067
+88,8,9,Sergio Perez PER,Red Bull Racing Honda,monaco,2021,1067
+89,9,10,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,monaco,2021,1067
+90,10,11,Esteban Ocon OCO,Alpine Renault,monaco,2021,1067
+91,11,12,Daniel Ricciardo RIC,McLaren Mercedes,monaco,2021,1067
+92,12,13,Lance Stroll STR,Aston Martin Mercedes,monaco,2021,1067
+93,13,14,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,monaco,2021,1067
+94,14,15,George Russell RUS,Williams Mercedes,monaco,2021,1067
+95,15,16,Yuki Tsunoda TSU,AlphaTauri Honda,monaco,2021,1067
+96,16,17,Fernando Alonso ALO,Alpine Renault,monaco,2021,1067
+97,17,18,Nicholas Latifi LAT,Williams Mercedes,monaco,2021,1067
+98,18,19,Nikita Mazepin MAZ,Haas Ferrari,monaco,2021,1067
+99,19,20,Mick Schumacher MSC,Haas Ferrari,monaco,2021,1067
+100,0,1,Charles Leclerc LEC,Ferrari,azerbaijan,2021,1068
+101,1,2,Lewis Hamilton HAM,Mercedes,azerbaijan,2021,1068
+102,2,3,Max Verstappen VER,Red Bull Racing Honda,azerbaijan,2021,1068
+103,3,4,Pierre Gasly GAS,AlphaTauri Honda,azerbaijan,2021,1068
+104,4,5,Carlos Sainz SAI,Ferrari,azerbaijan,2021,1068
+105,5,6,Sergio Perez PER,Red Bull Racing Honda,azerbaijan,2021,1068
+106,6,7,Yuki Tsunoda TSU,AlphaTauri Honda,azerbaijan,2021,1068
+107,7,8,Fernando Alonso ALO,Alpine Renault,azerbaijan,2021,1068
+108,8,9,Lando Norris NOR,McLaren Mercedes,azerbaijan,2021,1068
+109,9,10,Valtteri Bottas BOT,Mercedes,azerbaijan,2021,1068
+110,10,11,Sebastian Vettel VET,Aston Martin Mercedes,azerbaijan,2021,1068
+111,11,12,Esteban Ocon OCO,Alpine Renault,azerbaijan,2021,1068
+112,12,13,Daniel Ricciardo RIC,McLaren Mercedes,azerbaijan,2021,1068
+113,13,14,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,azerbaijan,2021,1068
+114,14,15,George Russell RUS,Williams Mercedes,azerbaijan,2021,1068
+115,15,16,Nicholas Latifi LAT,Williams Mercedes,azerbaijan,2021,1068
+116,16,17,Mick Schumacher MSC,Haas Ferrari,azerbaijan,2021,1068
+117,17,18,Nikita Mazepin MAZ,Haas Ferrari,azerbaijan,2021,1068
+118,18,19,Lance Stroll STR,Aston Martin Mercedes,azerbaijan,2021,1068
+119,19,20,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,azerbaijan,2021,1068
+120,0,1,Max Verstappen VER,Red Bull Racing Honda,france,2021,1070
+121,1,2,Lewis Hamilton HAM,Mercedes,france,2021,1070
+122,2,3,Valtteri Bottas BOT,Mercedes,france,2021,1070
+123,3,4,Sergio Perez PER,Red Bull Racing Honda,france,2021,1070
+124,4,5,Carlos Sainz SAI,Ferrari,france,2021,1070
+125,5,6,Pierre Gasly GAS,AlphaTauri Honda,france,2021,1070
+126,6,7,Charles Leclerc LEC,Ferrari,france,2021,1070
+127,7,8,Lando Norris NOR,McLaren Mercedes,france,2021,1070
+128,8,9,Fernando Alonso ALO,Alpine Renault,france,2021,1070
+129,9,10,Daniel Ricciardo RIC,McLaren Mercedes,france,2021,1070
+130,10,11,Esteban Ocon OCO,Alpine Renault,france,2021,1070
+131,11,12,Sebastian Vettel VET,Aston Martin Mercedes,france,2021,1070
+132,12,13,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,france,2021,1070
+133,13,14,George Russell RUS,Williams Mercedes,france,2021,1070
+134,14,15,Mick Schumacher MSC,Haas Ferrari,france,2021,1070
+135,15,16,Nicholas Latifi LAT,Williams Mercedes,france,2021,1070
+136,16,17,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,france,2021,1070
+137,17,18,Nikita Mazepin MAZ,Haas Ferrari,france,2021,1070
+138,18,19,Lance Stroll STR,Aston Martin Mercedes,france,2021,1070
+139,0,1,Max Verstappen VER,Red Bull Racing Honda,austria,2021,1092
+140,1,2,Lewis Hamilton HAM,Mercedes,austria,2021,1092
+141,2,3,Lando Norris NOR,McLaren Mercedes,austria,2021,1092
+142,3,4,Sergio Perez PER,Red Bull Racing Honda,austria,2021,1092
+143,4,5,Valtteri Bottas BOT,Mercedes,austria,2021,1092
+144,5,6,Pierre Gasly GAS,AlphaTauri Honda,austria,2021,1092
+145,6,7,Charles Leclerc LEC,Ferrari,austria,2021,1092
+146,7,8,Fernando Alonso ALO,Alpine Renault,austria,2021,1092
+147,8,9,Lance Stroll STR,Aston Martin Mercedes,austria,2021,1092
+148,9,10,George Russell RUS,Williams Mercedes,austria,2021,1092
+149,10,11,Yuki Tsunoda TSU,AlphaTauri Honda,austria,2021,1092
+150,11,12,Carlos Sainz SAI,Ferrari,austria,2021,1092
+151,12,13,Daniel Ricciardo RIC,McLaren Mercedes,austria,2021,1092
+152,13,14,Sebastian Vettel VET,Aston Martin Mercedes,austria,2021,1092
+153,14,15,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,austria,2021,1092
+154,15,16,Nicholas Latifi LAT,Williams Mercedes,austria,2021,1092
+155,16,17,Esteban Ocon OCO,Alpine Renault,austria,2021,1092
+156,17,18,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,austria,2021,1092
+157,18,19,Mick Schumacher MSC,Haas Ferrari,austria,2021,1092
+158,19,20,Nikita Mazepin MAZ,Haas Ferrari,austria,2021,1092
+159,0,1,Max Verstappen VER,Red Bull Racing Honda,austria,2021,1071
+160,1,2,Lando Norris NOR,McLaren Mercedes,austria,2021,1071
+161,2,3,Sergio Perez PER,Red Bull Racing Honda,austria,2021,1071
+162,3,4,Lewis Hamilton HAM,Mercedes,austria,2021,1071
+163,4,5,Valtteri Bottas BOT,Mercedes,austria,2021,1071
+164,5,6,Pierre Gasly GAS,AlphaTauri Honda,austria,2021,1071
+165,6,7,Yuki Tsunoda TSU,AlphaTauri Honda,austria,2021,1071
+166,7,8,George Russell RUS,Williams Mercedes,austria,2021,1071
+167,8,9,Lance Stroll STR,Aston Martin Mercedes,austria,2021,1071
+168,9,10,Carlos Sainz SAI,Ferrari,austria,2021,1071
+169,10,11,Sebastian Vettel VET,Aston Martin Mercedes,austria,2021,1071
+170,11,12,Charles Leclerc LEC,Ferrari,austria,2021,1071
+171,12,13,Daniel Ricciardo RIC,McLaren Mercedes,austria,2021,1071
+172,13,14,Fernando Alonso ALO,Alpine Renault,austria,2021,1071
+173,14,15,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,austria,2021,1071
+174,15,16,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,austria,2021,1071
+175,16,17,Esteban Ocon OCO,Alpine Renault,austria,2021,1071
+176,17,18,Nicholas Latifi LAT,Williams Mercedes,austria,2021,1071
+177,18,19,Mick Schumacher MSC,Haas Ferrari,austria,2021,1071
+178,19,20,Nikita Mazepin MAZ,Haas Ferrari,austria,2021,1071
+179,0,1,Max Verstappen VER,Red Bull Racing Honda,great-britain,2021,1072
+180,1,2,Lewis Hamilton HAM,Mercedes,great-britain,2021,1072
+181,2,3,Valtteri Bottas BOT,Mercedes,great-britain,2021,1072
+182,3,4,Charles Leclerc LEC,Ferrari,great-britain,2021,1072
+183,4,5,Lando Norris NOR,McLaren Mercedes,great-britain,2021,1072
+184,5,6,Daniel Ricciardo RIC,McLaren Mercedes,great-britain,2021,1072
+185,6,7,Fernando Alonso ALO,Alpine Renault,great-britain,2021,1072
+186,7,8,Sebastian Vettel VET,Aston Martin Mercedes,great-britain,2021,1072
+187,8,9,Esteban Ocon OCO,Alpine Renault,great-britain,2021,1072
+188,9,10,Carlos Sainz SAI,Ferrari,great-britain,2021,1072
+189,10,11,Pierre Gasly GAS,AlphaTauri Honda,great-britain,2021,1072
+190,11,12,George Russell RUS,Williams Mercedes,great-britain,2021,1072
+191,12,13,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,great-britain,2021,1072
+192,13,14,Lance Stroll STR,Aston Martin Mercedes,great-britain,2021,1072
+193,14,15,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,great-britain,2021,1072
+194,15,16,Yuki Tsunoda TSU,AlphaTauri Honda,great-britain,2021,1072
+195,16,17,Nicholas Latifi LAT,Williams Mercedes,great-britain,2021,1072
+196,17,18,Mick Schumacher MSC,Haas Ferrari,great-britain,2021,1072
+197,18,19,Nikita Mazepin MAZ,Haas Ferrari,great-britain,2021,1072
+198,19,20,Sergio Perez PER,Red Bull Racing Honda,great-britain,2021,1072
+199,0,1,Lewis Hamilton HAM,Mercedes,hungary,2021,1073
+200,1,2,Valtteri Bottas BOT,Mercedes,hungary,2021,1073
+201,2,3,Max Verstappen VER,Red Bull Racing Honda,hungary,2021,1073
+202,3,4,Sergio Perez PER,Red Bull Racing Honda,hungary,2021,1073
+203,4,5,Pierre Gasly GAS,AlphaTauri Honda,hungary,2021,1073
+204,5,6,Lando Norris NOR,McLaren Mercedes,hungary,2021,1073
+205,6,7,Charles Leclerc LEC,Ferrari,hungary,2021,1073
+206,7,8,Esteban Ocon OCO,Alpine Renault,hungary,2021,1073
+207,8,9,Fernando Alonso ALO,Alpine Renault,hungary,2021,1073
+208,9,10,Sebastian Vettel VET,Aston Martin Mercedes,hungary,2021,1073
+209,10,11,Daniel Ricciardo RIC,McLaren Mercedes,hungary,2021,1073
+210,11,12,Lance Stroll STR,Aston Martin Mercedes,hungary,2021,1073
+211,12,13,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,hungary,2021,1073
+212,13,14,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,hungary,2021,1073
+213,14,15,Carlos Sainz SAI,Ferrari,hungary,2021,1073
+214,15,16,Yuki Tsunoda TSU,AlphaTauri Honda,hungary,2021,1073
+215,16,17,George Russell RUS,Williams Mercedes,hungary,2021,1073
+216,17,18,Nicholas Latifi LAT,Williams Mercedes,hungary,2021,1073
+217,18,19,Nikita Mazepin MAZ,Haas Ferrari,hungary,2021,1073
+218,19,20,Mick Schumacher MSC,Haas Ferrari,hungary,2021,1073
+219,0,1,Max Verstappen VER,Red Bull Racing Honda,belgium,2021,1074
+220,1,2,George Russell RUS,Williams Mercedes,belgium,2021,1074
+221,2,3,Lewis Hamilton HAM,Mercedes,belgium,2021,1074
+222,3,4,Daniel Ricciardo RIC,McLaren Mercedes,belgium,2021,1074
+223,4,5,Sebastian Vettel VET,Aston Martin Mercedes,belgium,2021,1074
+224,5,6,Pierre Gasly GAS,AlphaTauri Honda,belgium,2021,1074
+225,6,7,Sergio Perez PER,Red Bull Racing Honda,belgium,2021,1074
+226,7,8,Esteban Ocon OCO,Alpine Renault,belgium,2021,1074
+227,8,9,Charles Leclerc LEC,Ferrari,belgium,2021,1074
+228,9,10,Nicholas Latifi LAT,Williams Mercedes,belgium,2021,1074
+229,10,11,Carlos Sainz SAI,Ferrari,belgium,2021,1074
+230,11,12,Fernando Alonso ALO,Alpine Renault,belgium,2021,1074
+231,12,13,Valtteri Bottas BOT,Mercedes,belgium,2021,1074
+232,13,14,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,belgium,2021,1074
+233,14,15,Lando Norris NOR,McLaren Mercedes,belgium,2021,1074
+234,15,16,Yuki Tsunoda TSU,AlphaTauri Honda,belgium,2021,1074
+235,16,17,Mick Schumacher MSC,Haas Ferrari,belgium,2021,1074
+236,17,18,Nikita Mazepin MAZ,Haas Ferrari,belgium,2021,1074
+237,18,19,Lance Stroll STR,Aston Martin Mercedes,belgium,2021,1074
+238,19,20,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,belgium,2021,1074
+239,0,1,Max Verstappen VER,Red Bull Racing Honda,netherlands,2021,1075
+240,1,2,Lewis Hamilton HAM,Mercedes,netherlands,2021,1075
+241,2,3,Valtteri Bottas BOT,Mercedes,netherlands,2021,1075
+242,3,4,Pierre Gasly GAS,AlphaTauri Honda,netherlands,2021,1075
+243,4,5,Charles Leclerc LEC,Ferrari,netherlands,2021,1075
+244,5,6,Carlos Sainz SAI,Ferrari,netherlands,2021,1075
+245,6,7,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,netherlands,2021,1075
+246,7,8,Esteban Ocon OCO,Alpine Renault,netherlands,2021,1075
+247,8,9,Fernando Alonso ALO,Alpine Renault,netherlands,2021,1075
+248,9,10,Daniel Ricciardo RIC,McLaren Mercedes,netherlands,2021,1075
+249,10,11,George Russell RUS,Williams Mercedes,netherlands,2021,1075
+250,11,12,Lance Stroll STR,Aston Martin Mercedes,netherlands,2021,1075
+251,12,13,Lando Norris NOR,McLaren Mercedes,netherlands,2021,1075
+252,13,14,Yuki Tsunoda TSU,AlphaTauri Honda,netherlands,2021,1075
+253,14,15,Sebastian Vettel VET,Aston Martin Mercedes,netherlands,2021,1075
+254,15,16,Robert Kubica KUB,Alfa Romeo Racing Ferrari,netherlands,2021,1075
+255,16,17,Mick Schumacher MSC,Haas Ferrari,netherlands,2021,1075
+256,17,18,Nikita Mazepin MAZ,Haas Ferrari,netherlands,2021,1075
+257,0,1,Max Verstappen VER,Red Bull Racing Honda,italy,2021,1076
+258,1,2,Daniel Ricciardo RIC,McLaren Mercedes,italy,2021,1076
+259,2,3,Lando Norris NOR,McLaren Mercedes,italy,2021,1076
+260,3,4,Lewis Hamilton HAM,Mercedes,italy,2021,1076
+261,4,5,Charles Leclerc LEC,Ferrari,italy,2021,1076
+262,5,6,Carlos Sainz SAI,Ferrari,italy,2021,1076
+263,6,7,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,italy,2021,1076
+264,7,8,Sergio Perez PER,Red Bull Racing Honda,italy,2021,1076
+265,8,9,Lance Stroll STR,Aston Martin Mercedes,italy,2021,1076
+266,9,10,Fernando Alonso ALO,Alpine Renault,italy,2021,1076
+267,10,11,Sebastian Vettel VET,Aston Martin Mercedes,italy,2021,1076
+268,11,12,Esteban Ocon OCO,Alpine Renault,italy,2021,1076
+269,12,13,Nicholas Latifi LAT,Williams Mercedes,italy,2021,1076
+270,13,14,George Russell RUS,Williams Mercedes,italy,2021,1076
+271,14,15,Yuki Tsunoda TSU,AlphaTauri Honda,italy,2021,1076
+272,15,16,Nikita Mazepin MAZ,Haas Ferrari,italy,2021,1076
+273,16,17,Robert Kubica KUB,Alfa Romeo Racing Ferrari,italy,2021,1076
+274,17,18,Mick Schumacher MSC,Haas Ferrari,italy,2021,1076
+275,18,19,Valtteri Bottas BOT,Mercedes,italy,2021,1076
+276,0,1,Lando Norris NOR,McLaren Mercedes,russia,2021,1077
+277,1,2,Carlos Sainz SAI,Ferrari,russia,2021,1077
+278,2,3,George Russell RUS,Williams Mercedes,russia,2021,1077
+279,3,4,Lewis Hamilton HAM,Mercedes,russia,2021,1077
+280,4,5,Daniel Ricciardo RIC,McLaren Mercedes,russia,2021,1077
+281,5,6,Fernando Alonso ALO,Alpine Renault,russia,2021,1077
+282,6,7,Lance Stroll STR,Aston Martin Mercedes,russia,2021,1077
+283,7,8,Sergio Perez PER,Red Bull Racing Honda,russia,2021,1077
+284,8,9,Esteban Ocon OCO,Alpine Renault,russia,2021,1077
+285,9,10,Sebastian Vettel VET,Aston Martin Mercedes,russia,2021,1077
+286,10,11,Pierre Gasly GAS,AlphaTauri Honda,russia,2021,1077
+287,11,12,Yuki Tsunoda TSU,AlphaTauri Honda,russia,2021,1077
+288,12,13,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,russia,2021,1077
+289,13,14,Mick Schumacher MSC,Haas Ferrari,russia,2021,1077
+290,14,15,Nikita Mazepin MAZ,Haas Ferrari,russia,2021,1077
+291,15,16,Valtteri Bottas BOT,Mercedes,russia,2021,1077
+292,16,17,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,russia,2021,1077
+293,17,18,Nicholas Latifi LAT,Williams Mercedes,russia,2021,1077
+294,18,19,Charles Leclerc LEC,Ferrari,russia,2021,1077
+295,19,20,Max Verstappen VER,Red Bull Racing Honda,russia,2021,1077
+296,0,1,Valtteri Bottas BOT,Mercedes,turkey,2021,1078
+297,1,2,Max Verstappen VER,Red Bull Racing Honda,turkey,2021,1078
+298,2,3,Charles Leclerc LEC,Ferrari,turkey,2021,1078
+299,3,4,Pierre Gasly GAS,AlphaTauri Honda,turkey,2021,1078
+300,4,5,Fernando Alonso ALO,Alpine Renault,turkey,2021,1078
+301,5,6,Sergio Perez PER,Red Bull Racing Honda,turkey,2021,1078
+302,6,7,Lando Norris NOR,McLaren Mercedes,turkey,2021,1078
+303,7,8,Lance Stroll STR,Aston Martin Mercedes,turkey,2021,1078
+304,8,9,Yuki Tsunoda TSU,AlphaTauri Honda,turkey,2021,1078
+305,9,10,Sebastian Vettel VET,Aston Martin Mercedes,turkey,2021,1078
+306,10,11,Lewis Hamilton HAM,Mercedes,turkey,2021,1078
+307,11,12,Esteban Ocon OCO,Alpine Renault,turkey,2021,1078
+308,12,13,George Russell RUS,Williams Mercedes,turkey,2021,1078
+309,13,14,Mick Schumacher MSC,Haas Ferrari,turkey,2021,1078
+310,14,15,Nicholas Latifi LAT,Williams Mercedes,turkey,2021,1078
+311,15,16,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,turkey,2021,1078
+312,16,17,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,turkey,2021,1078
+313,17,18,Nikita Mazepin MAZ,Haas Ferrari,turkey,2021,1078
+314,18,19,Carlos Sainz SAI,Ferrari,turkey,2021,1078
+315,19,20,Daniel Ricciardo RIC,McLaren Mercedes,turkey,2021,1078
+316,0,1,Max Verstappen VER,Red Bull Racing Honda,united-states,2021,1102
+317,1,2,Lewis Hamilton HAM,Mercedes,united-states,2021,1102
+318,2,3,Sergio Perez PER,Red Bull Racing Honda,united-states,2021,1102
+319,3,4,Charles Leclerc LEC,Ferrari,united-states,2021,1102
+320,4,5,Carlos Sainz SAI,Ferrari,united-states,2021,1102
+321,5,6,Daniel Ricciardo RIC,McLaren Mercedes,united-states,2021,1102
+322,6,7,Lando Norris NOR,McLaren Mercedes,united-states,2021,1102
+323,7,8,Pierre Gasly GAS,AlphaTauri Honda,united-states,2021,1102
+324,8,9,Valtteri Bottas BOT,Mercedes,united-states,2021,1102
+325,9,10,Yuki Tsunoda TSU,AlphaTauri Honda,united-states,2021,1102
+326,10,11,Esteban Ocon OCO,Alpine Renault,united-states,2021,1102
+327,11,12,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,united-states,2021,1102
+328,12,13,Lance Stroll STR,Aston Martin Mercedes,united-states,2021,1102
+329,13,14,Nicholas Latifi LAT,Williams Mercedes,united-states,2021,1102
+330,14,15,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,united-states,2021,1102
+331,15,16,Mick Schumacher MSC,Haas Ferrari,united-states,2021,1102
+332,16,17,Nikita Mazepin MAZ,Haas Ferrari,united-states,2021,1102
+333,17,18,Sebastian Vettel VET,Aston Martin Mercedes,united-states,2021,1102
+334,18,19,Fernando Alonso ALO,Alpine Renault,united-states,2021,1102
+335,19,20,George Russell RUS,Williams Mercedes,united-states,2021,1102
+336,0,1,Valtteri Bottas BOT,Mercedes,mexico,2021,1103
+337,1,2,Lewis Hamilton HAM,Mercedes,mexico,2021,1103
+338,2,3,Max Verstappen VER,Red Bull Racing Honda,mexico,2021,1103
+339,3,4,Sergio Perez PER,Red Bull Racing Honda,mexico,2021,1103
+340,4,5,Pierre Gasly GAS,AlphaTauri Honda,mexico,2021,1103
+341,5,6,Carlos Sainz SAI,Ferrari,mexico,2021,1103
+342,6,7,Daniel Ricciardo RIC,McLaren Mercedes,mexico,2021,1103
+343,7,8,Charles Leclerc LEC,Ferrari,mexico,2021,1103
+344,8,9,Sebastian Vettel VET,Aston Martin Mercedes,mexico,2021,1103
+345,9,10,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,mexico,2021,1103
+346,10,11,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,mexico,2021,1103
+347,11,12,Fernando Alonso ALO,Alpine Renault,mexico,2021,1103
+348,12,13,Nicholas Latifi LAT,Williams Mercedes,mexico,2021,1103
+349,13,14,Mick Schumacher MSC,Haas Ferrari,mexico,2021,1103
+350,14,15,Nikita Mazepin MAZ,Haas Ferrari,mexico,2021,1103
+351,15,16,George Russell RUS,Williams Mercedes,mexico,2021,1103
+352,16,17,Yuki Tsunoda TSU,AlphaTauri Honda,mexico,2021,1103
+353,17,18,Lando Norris NOR,McLaren Mercedes,mexico,2021,1103
+354,18,19,Esteban Ocon OCO,Alpine Renault,mexico,2021,1103
+355,19,20,Lance Stroll STR,Aston Martin Mercedes,mexico,2021,1103
+356,0,1,Valtteri Bottas BOT,Mercedes,brazil,2021,1104
+357,1,2,Max Verstappen VER,Red Bull Racing Honda,brazil,2021,1104
+358,2,3,Carlos Sainz SAI,Ferrari,brazil,2021,1104
+359,3,4,Sergio Perez PER,Red Bull Racing Honda,brazil,2021,1104
+360,4,5,Lando Norris NOR,McLaren Mercedes,brazil,2021,1104
+361,5,6,Charles Leclerc LEC,Ferrari,brazil,2021,1104
+362,6,7,Pierre Gasly GAS,AlphaTauri Honda,brazil,2021,1104
+363,7,8,Esteban Ocon OCO,Alpine Renault,brazil,2021,1104
+364,8,9,Sebastian Vettel VET,Aston Martin Mercedes,brazil,2021,1104
+365,9,10,Lewis Hamilton HAM,Mercedes,brazil,2021,1104
+366,10,11,Daniel Ricciardo RIC,McLaren Mercedes,brazil,2021,1104
+367,11,12,Fernando Alonso ALO,Alpine Renault,brazil,2021,1104
+368,12,13,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,brazil,2021,1104
+369,13,14,Lance Stroll STR,Aston Martin Mercedes,brazil,2021,1104
+370,14,15,Yuki Tsunoda TSU,AlphaTauri Honda,brazil,2021,1104
+371,15,16,Nicholas Latifi LAT,Williams Mercedes,brazil,2021,1104
+372,16,17,George Russell RUS,Williams Mercedes,brazil,2021,1104
+373,17,18,Mick Schumacher MSC,Haas Ferrari,brazil,2021,1104
+374,18,19,Nikita Mazepin MAZ,Haas Ferrari,brazil,2021,1104
+375,19,20,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,brazil,2021,1104
+376,0,1,Lewis Hamilton HAM,Mercedes,qatar,2021,1105
+377,1,2,Pierre Gasly GAS,AlphaTauri Honda,qatar,2021,1105
+378,2,3,Fernando Alonso ALO,Alpine Renault,qatar,2021,1105
+379,3,4,Lando Norris NOR,McLaren Mercedes,qatar,2021,1105
+380,4,5,Carlos Sainz SAI,Ferrari,qatar,2021,1105
+381,5,6,Valtteri Bottas BOT,Mercedes,qatar,2021,1105
+382,6,7,Max Verstappen VER,Red Bull Racing Honda,qatar,2021,1105
+383,7,8,Yuki Tsunoda TSU,AlphaTauri Honda,qatar,2021,1105
+384,8,9,Esteban Ocon OCO,Alpine Renault,qatar,2021,1105
+385,9,10,Sebastian Vettel VET,Aston Martin Mercedes,qatar,2021,1105
+386,10,11,Sergio Perez PER,Red Bull Racing Honda,qatar,2021,1105
+387,11,12,Lance Stroll STR,Aston Martin Mercedes,qatar,2021,1105
+388,12,13,Charles Leclerc LEC,Ferrari,qatar,2021,1105
+389,13,14,Daniel Ricciardo RIC,McLaren Mercedes,qatar,2021,1105
+390,14,15,George Russell RUS,Williams Mercedes,qatar,2021,1105
+391,15,16,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,qatar,2021,1105
+392,16,17,Nicholas Latifi LAT,Williams Mercedes,qatar,2021,1105
+393,17,18,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,qatar,2021,1105
+394,18,19,Mick Schumacher MSC,Haas Ferrari,qatar,2021,1105
+395,19,20,Nikita Mazepin MAZ,Haas Ferrari,qatar,2021,1105
+396,0,1,Lewis Hamilton HAM,Mercedes,saudi-arabia,2021,1106
+397,1,2,Valtteri Bottas BOT,Mercedes,saudi-arabia,2021,1106
+398,2,3,Max Verstappen VER,Red Bull Racing Honda,saudi-arabia,2021,1106
+399,3,4,Charles Leclerc LEC,Ferrari,saudi-arabia,2021,1106
+400,4,5,Sergio Perez PER,Red Bull Racing Honda,saudi-arabia,2021,1106
+401,5,6,Pierre Gasly GAS,AlphaTauri Honda,saudi-arabia,2021,1106
+402,6,7,Lando Norris NOR,McLaren Mercedes,saudi-arabia,2021,1106
+403,7,8,Yuki Tsunoda TSU,AlphaTauri Honda,saudi-arabia,2021,1106
+404,8,9,Esteban Ocon OCO,Alpine Renault,saudi-arabia,2021,1106
+405,9,10,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,saudi-arabia,2021,1106
+406,10,11,Daniel Ricciardo RIC,McLaren Mercedes,saudi-arabia,2021,1106
+407,11,12,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,saudi-arabia,2021,1106
+408,12,13,Fernando Alonso ALO,Alpine Renault,saudi-arabia,2021,1106
+409,13,14,George Russell RUS,Williams Mercedes,saudi-arabia,2021,1106
+410,14,15,Carlos Sainz SAI,Ferrari,saudi-arabia,2021,1106
+411,15,16,Nicholas Latifi LAT,Williams Mercedes,saudi-arabia,2021,1106
+412,16,17,Sebastian Vettel VET,Aston Martin Mercedes,saudi-arabia,2021,1106
+413,17,18,Lance Stroll STR,Aston Martin Mercedes,saudi-arabia,2021,1106
+414,18,19,Mick Schumacher MSC,Haas Ferrari,saudi-arabia,2021,1106
+415,19,20,Nikita Mazepin MAZ,Haas Ferrari,saudi-arabia,2021,1106
+416,0,1,Max Verstappen VER,Red Bull Racing Honda,abu-dhabi,2021,1107
+417,1,2,Lewis Hamilton HAM,Mercedes,abu-dhabi,2021,1107
+418,2,3,Lando Norris NOR,McLaren Mercedes,abu-dhabi,2021,1107
+419,3,4,Sergio Perez PER,Red Bull Racing Honda,abu-dhabi,2021,1107
+420,4,5,Carlos Sainz SAI,Ferrari,abu-dhabi,2021,1107
+421,5,6,Valtteri Bottas BOT,Mercedes,abu-dhabi,2021,1107
+422,6,7,Charles Leclerc LEC,Ferrari,abu-dhabi,2021,1107
+423,7,8,Yuki Tsunoda TSU,AlphaTauri Honda,abu-dhabi,2021,1107
+424,8,9,Esteban Ocon OCO,Alpine Renault,abu-dhabi,2021,1107
+425,9,10,Daniel Ricciardo RIC,McLaren Mercedes,abu-dhabi,2021,1107
+426,10,11,Fernando Alonso ALO,Alpine Renault,abu-dhabi,2021,1107
+427,11,12,Pierre Gasly GAS,AlphaTauri Honda,abu-dhabi,2021,1107
+428,12,13,Lance Stroll STR,Aston Martin Mercedes,abu-dhabi,2021,1107
+429,13,14,Antonio Giovinazzi GIO,Alfa Romeo Racing Ferrari,abu-dhabi,2021,1107
+430,14,15,Sebastian Vettel VET,Aston Martin Mercedes,abu-dhabi,2021,1107
+431,15,16,Nicholas Latifi LAT,Williams Mercedes,abu-dhabi,2021,1107
+432,16,17,George Russell RUS,Williams Mercedes,abu-dhabi,2021,1107
+433,17,18,Kimi Räikkönen RAI,Alfa Romeo Racing Ferrari,abu-dhabi,2021,1107
+434,18,19,Mick Schumacher MSC,Haas Ferrari,abu-dhabi,2021,1107
