@@ -31,6 +31,7 @@ library(lubridate)
 library(reshape2)
 library(knitr)
 library(kableExtra)
+library(CGPfunctions)
 ```
 
 ```{r Data}
@@ -159,19 +160,114 @@ This metric takes the average of every finishing race result for a driver (retir
 
 ```{r Average Finishing Position}
 race_results %>%
-  # ignore non-finishing positions
+  # disregard non-finishing positions
   filter(Pos!='NC' & Pos!='DQ') %>%
   mutate(Pos=as.numeric(Pos)) %>%
   group_by(Driver) %>%
   summarise(avgFinPos=round(mean(Pos),3)) %>%
   arrange(avgFinPos) %>% 
+  
   kbl(col.names=c('Driver','Average Finishing Position'),
       align='lc') %>%
   kable_material_dark() %>%
   row_spec(c(1,2),background='lightyellow',color='black')
 ```
 
-*Note: calculations exclude sprint race results*
+*Note: calculations exclude sprint qualifying results*
+
+# Change in Position
+A look into how the drivers moved up and down the race order throughout races.
+
+## Average Position Gained or Lost
+A slopegraph below marks the average start position and average end position for each driver across every race they competed in. Like before, Verstappen and Hamilton feature at the top for both statistics, starting and ending high up the grid overall. The visual suggests that both generally move down the grid over the course of a race. And while Verstappen tends to start races in better positions, he has a lower end position on average.
+
+However, it is important to note the limitations of this metric as an indicator of performance. Because they are means that factor in non-finishing positions, the numbers can be significantly skewed by outliers. In other words, a few poor results by a driver through no fault of their own (such as retirements) can heavily drag down their statistic. Additionally, gaining positions on average does not signal better performances because drivers who often start at the front, like Verstappen and Hamilton, have much fewer opportunities to gain positions; whereas hypothetically, a driver starting from last has 19 cars to overtake.
+
+```{r Average Start and End Positions}
+# set slopegraph colours
+cols <- c('VER'='#0600EF','HAM'='#00D2BE',
+          'PER'='gray','BOT'='gray','LEC'='gray','SAI'='gray','NOR'='gray','RIC'='gray',
+          'VET'='gray','STR'='gray','GAS'='gray','TSU'='gray','MSC'='gray','MAZ'='gray',
+          'RUS'='gray','LAT'='gray','ALO'='gray','OCO'='gray','RAI'='gray','GIO'='gray','KUB'='gray')
+
+# simplify race_results table
+race_results_s <- race_results %>% 
+  select(Driver,gp_name,Pos) %>%
+  rename(endPos=Pos)
+
+# simplify starting_grid table
+starting_grid_s <- starting_grid %>% 
+  select(Driver,gp_name,Pos) %>%
+  rename(startPos=Pos)
+
+startend <- race_results_s %>% 
+  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
+  # replace non-numeric values with 21 
+  mutate(endPos=replace(endPos,endPos=='NC','21'), # DNF/DNS
+         endPos=replace(endPos,endPos=='DQ','21'), # disqualification
+         startPos=replace(startPos,is.na(startPos),'21'), # pit lane start
+         endPos=as.numeric(endPos),
+         startPos=as.numeric(startPos))
+
+startend %>%
+  group_by(Driver) %>%
+  summarise(avgStartPos=round(mean(startPos),3),
+            avgEndPos=round(mean(endPos),3)) %>%
+  mutate(Driver=str_sub(Driver,-3,-1)) %>%
+  melt() %>%
+  
+  newggslopegraph(Times=variable,
+                  Measurement=value,
+                  Grouping=Driver,
+                  ReverseYAxis=TRUE,
+                  Title='Average Start and End Position by Driver',
+                  SubTitle=element_blank(),
+                  Caption=element_blank(),
+                  TitleTextSize=20,
+                  XTextSize=15,
+                  DataTextSize=5,
+                  LineColor=cols)
+```
+
+Note: pit lane starts, retirements, and disqualifications are considered 21st position.
+
+## Position Gained or Lost by Race
+
+We then plot the positions gained and lost race by race for Verstappen and Hamilton. Seeing how the two drivers gain or lose positions at each Grand Prix gives us a more detailed understanding that a summary statistic cannot.
+
+Counting the vertical lines tells us that Hamilton maintained his position in a race 12 times this season, which is more often than Verstappen did at 10 times. At 6 and 7, both moved up in races similar number of times. It is also interesting to see how Verstappen and Hamilton lost out greatly in the Italy and Azerbaijan GP.
+
+Again, gaining positions does not necessarily indicate better performances because you cannot move up if you are already in the lead.
+
+```{r Change in Position by Race}
+startend %>%
+  mutate(difPos=startPos-endPos) %>%
+  filter(Driver=='Lewis Hamilton HAM'|Driver=='Max Verstappen VER') %>%
+  mutate(Driver=str_sub(Driver,-3,-1)) %>%
+  
+  ggplot() + 
+  geom_bar(aes(x=gp_name,y=difPos),stat='identity',colour='white',fill='white') + 
+  facet_wrap(~Driver) +
+  labs(title='Number of Grand Prix Wins by Driver',
+       fill='Constructor') +
+  scale_y_continuous(breaks=c(-20,-15,-10,-5,0,5,10,15,20),expand=c(0,0)) +
+  coord_flip() +
+  hui_ggplot
+```
+
+```{r Change in Positions, include=FALSE}
+haha <- startend %>% 
+  mutate(gainlost=if_else(endPos>startPos,'lost','gain')) %>%
+  gather(key='var',value='value',3:5) %>%
+  filter(Driver=='Lewis Hamilton HAM') %>%
+  arrange(as.numeric(value))
+  
+ggplot(haha[haha$var!='gainlost',]) + 
+  geom_point(aes(x=gp_name,y=value,shape=var)) +#,size=3,pch=21,colour=alpha("white",0)) +
+  geom_linerange(aes(x=gp_name,ymin=startPos,ymax=endPos,colour=gainlost),data=spread(haha,var,value)) +
+  scale_fill_manual(values = c("green", "red")) +
+  coord_flip()
+```
 
 # Is Hamilton Worse at Converting Qualifying Performance to Race Results?
 In Motorsports, performance during qualifying sessions plays a significant role in determining grid positions for the race. Therefore, a good qualifying showing that puts the car further up the pack can help a driver achieve better results on race day.
@@ -201,6 +297,7 @@ qualis %>%
   group_by(Driver,Car) %>%
   summarise(avgGap=mean(bestTime-mateTime)) %>% 
   arrange(Car) %>%
+  
   kbl(col.names=c('Driver','Constructor','Average Qualifying Gap to Teammate'),
       align='llc') %>%
   kable_material_dark() %>%
@@ -220,6 +317,7 @@ qualis %>%
   group_by(Driver) %>%
   summarise(avgQualiPos=round(mean(Pos),3)) %>%
   arrange(avgQualiPos) %>%
+  
   kbl(col.names=c('Driver','Average Qualifying Position'),
       align='lc') %>%
   kable_material_dark() %>%
@@ -227,13 +325,14 @@ qualis %>%
 ```
 
 ## Average Starting Position (After Penalties and Sprints)
-No, because qualifying performance does not directly translate to starting grid position, which is a bigger influence final race positions. The starting grid takes qualifying order and adjust it based on  penalties and sprint races results. When examining the starting grids of races, we find that Verstappen actually starts further up front on average.
+No, because qualifying performance does not directly translate to starting grid position, which is a bigger influence final race positions. The starting grid takes qualifying order and adjust it based on  penalties and sprint qualifying results. When examining the starting grids of races, we find that Verstappen actually starts further up front on average.
 
 ```{r Average Starting Position (After Penalties and Sprints)}
-starting_grid %>%
+startend %>%
   group_by(Driver) %>%
-  summarise(avgStartPos=round(mean(Pos),3)) %>%
+  summarise(avgStartPos=round(mean(startPos),3)) %>%
   arrange(avgStartPos) %>%
+  
   kbl(col.names=c('Driver','Average Starting Position'),
       align='lc') %>%
   kable_material_dark() %>%
@@ -243,7 +342,7 @@ starting_grid %>%
 ## Number of Qualifying P1s versus Pole Positions
 The difference between qualifying position and starting grid position is particularly pronounced when looking at the top positions. 
 
-Although Verstappen and Hamilton almost match each other in topping the timing sheets during qualifying sessions, Verstappen ends up starting the race in pole position significantly more often. This can be explained by Hamilton losing positions at sprint races and taking an engine penalty while ahead, both of which Verstappen never did.
+Although Verstappen and Hamilton almost match each other in topping the timing sheets during qualifying sessions, Verstappen ends up starting the race in pole position significantly more often. This can be explained by Hamilton losing positions at sprint qualifying and taking an engine penalty while ahead, both of which Verstappen never did.
 
 This is an important observation because starting from the most favourable position on the grid ultimately is the biggest contributor to race victories. According to race archives, 40% of all race victories in Formula One has been on from pole position.
 
@@ -288,24 +387,15 @@ qualip1s %>%
 Now knowing that Hamilton has started races from pole position far less often than Verstappen did, it makes sense why why a lower number and percentage of Hamilton's victories are won from pole position.
 
 ```{r Number and Percent of Wins from Pole}
-race_results_s <- race_results %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(endPos=Pos)
-
-starting_grid_s <- starting_grid %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(startPos=Pos)
-
-race_results_s %>% 
-  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
+startend %>%
   filter(endPos=='1') %>%
-  mutate(endPos=as.numeric(endPos)) %>%
   mutate(WFP=if_else(endPos==1&startPos==1,1,0)) %>%
   group_by(Driver) %>%
   summarise(numWins=n(),
             numWFP=sum(WFP),
             pcntWFP=numWFP/sum(endPos)) %>%
   arrange(-numWins) %>%
+  
   kbl(col.names=c('Driver','Number of Wins','Number of Wins From Pole', 'Percent of Wins From Pole'),
       align='lccc') %>%
   kable_material_dark() %>%
@@ -313,11 +403,10 @@ race_results_s %>%
 ```
 
 ## Pole Conversion Rate
-In fact, when Hamilton is on pole position because of a good qualifying performance, he is just as likely to achieve a win compared to Verstappen. The difference between two in pole conversion rate is much lower than that in percentage of wins from poles.
+In fact, when Hamilton is on pole position because of a good qualifying performance, he is nearly just as likely to achieve a win compared to Verstappen. The difference between two in pole conversion rate is much lower than that in percentage of wins from poles.
 
 ```{r Pole Conversion Rate}
-race_results_s %>% 
-  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
+startend %>%
   filter(startPos=='1') %>%
   mutate(converted=if_else(endPos==1&startPos==1,1,0)) %>%
   group_by(Driver) %>%
@@ -325,6 +414,7 @@ race_results_s %>%
             numConverted=sum(converted),
             pcntConverted=numConverted/sum(startPos)) %>%
   arrange(-numPoles) %>%
+  
   kbl(col.names=c('Driver','Number of Poles','Number of Poles Converted','Percent of Poles Converted'),
       align='lccc') %>%
   kable_material_dark() %>%
@@ -351,127 +441,6 @@ fastest_laps %>%
 
 *Note: there is no fastest lap recorded in the Belgium GP*
 
-# Change in Position [WORK IN PROGRESS]
-
-This describes how the races played out.
-
-## Average Position Gained or Lost
-We can look at average position gained or lost throughout all 22 races. However, this is not the best metric of performance because it does not consider starting positions. Verstappen and Hamilton, who often start in the front of the grid, have much fewer opportunities to gain positions; whereas hypothetically, a driver starting from last has 19 cars to overtake.
-
-The only 'real' insight we can draw from this statistic is that Hamilton loses fewer positions during a race than Verstappen does on average.
-
-```{r Average Positions Gained or Lost}
-race_results_s <- race_results %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(endPos=Pos)
-
-starting_grid_s <- starting_grid %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(startPos=Pos)
-
-startend <- race_results_s %>% 
-  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
-  # replace non-numeric values
-  mutate(endPos=replace(endPos,endPos=='NC','21'), # DNF/DNS
-         endPos=replace(endPos,endPos=='DQ','100'), # disqualification
-         startPos=replace(startPos,is.na(startPos),'21'), # pit lane start
-         endPos=as.numeric(endPos),
-         startPos=as.numeric(startPos))
-
-startend %>%
-  mutate(difPos=startPos-endPos) %>%
-  group_by(Driver) %>%
-  summarise(avgDifPos=round(mean(difPos),3)) %>%
-  arrange(-avgDifPos)
-```
-
-Let's see how the positions gained and lost played out race by race for Verstappen and Hamilton.
-
-```{r Positions Gained or Lost}
-race_results_s <- race_results %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(endPos=Pos)
-
-starting_grid_s <- starting_grid %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(startPos=Pos)
-
-startend <- race_results_s %>% 
-  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
-  # replace non-numeric values
-  mutate(endPos=replace(endPos,endPos=='NC','21'), # DNF/DNS
-         endPos=replace(endPos,endPos=='DQ','100'), # disqualification
-         startPos=replace(startPos,is.na(startPos),'21'), # pit lane start
-         endPos=as.numeric(endPos),
-         startPos=as.numeric(startPos))
-
-startend %>%
-  mutate(difPos=startPos-endPos) %>%
-  filter(Driver=='Lewis Hamilton HAM'|Driver=='Max Verstappen VER') %>%
-  
-  ggplot() + geom_bar(aes(x=gp_name,y=difPos),stat='identity') + coord_flip() + facet_wrap(~Driver)
-```
-
-```{}
-df <- data.frame(year  = rep(2000:2009, times=3),
-                 var   = rep(c("income","spending","balance"), each=10),
-                 value = c(0:9, 9:0, rep(c("deficit","surplus"), each=5)))
-df
-```
-
-```{}
-haha <- startend %>% 
-  #mutate(gainlost=if_else(endPos>startPos,'lost','gain')) %>%
-  gather(key='var',value='value',3:4) %>%
-  filter(Driver=='Lewis Hamilton HAM') %>%
-  arrange(value)
-
-ggplot(data=haha) + 
-  geom_point(aes(x=gp_name,y=value,fill=var),size=3,pch=21,colour=alpha("white",0)) +
-  geom_linerange(data=haha,aes(x=gp_name,ymin=startPos,ymax=endPos)) +
-  scale_fill_manual(values = c('green','red')) +
-  coord_flip()
-```
-
-```{}
-haha <- startend %>% 
-  mutate(gainlost=if_else(endPos>startPos,'lost','gain')) %>%
-  gather(key='var',value='value',3:5) %>%
-  filter(Driver=='Lewis Hamilton HAM') %>%
-  arrange(as.numeric(value))
-  
-ggplot(haha[haha$var!='gainlost',]) + 
-  geom_point(aes(x=gp_name,y=value,shape=var)) +#,size=3,pch=21,colour=alpha("white",0)) +
-  geom_linerange(aes(x=gp_name,ymin=startPos,ymax=endPos,colour=gainlost),data=spread(haha,var,value)) +
-  scale_fill_manual(values = c("green", "red")) +
-  coord_flip()
-```
-
-```{}
-race_results_s <- race_results %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(endPos=Pos)
-
-starting_grid_s <- starting_grid %>% 
-  select(Driver,gp_name,Pos) %>%
-  rename(startPos=Pos)
-
-startend <- race_results_s %>% 
-  left_join(starting_grid_s,by=c('Driver','gp_name')) %>%
-  # replace non-numeric values
-  mutate(endPos=replace(endPos,endPos=='NC','21'), # DNF/DNS
-         endPos=replace(endPos,endPos=='DQ','100'), # disqualification
-         startPos=replace(startPos,is.na(startPos),'21'), # pit lane start
-         endPos=as.numeric(endPos),
-         startPos=as.numeric(startPos))
-
-startend %>%
-  mutate(difPos=startPos-endPos) %>%
-  filter(Driver=='Lewis Hamilton HAM'|Driver=='Max Verstappen VER') %>%
-  
-  ggplot() + geom_bar(aes(x=gp_name,y=difPos),stat='identity') + coord_flip() + facet_wrap(~Driver)
-```
-
 # Championship Standings 
 Let's see if a broader look at the season reveals any insights about the championship title fight between Verstappen and Hamilton.
 
@@ -479,7 +448,7 @@ Let's see if a broader look at the season reveals any insights about the champio
 Earning consistently top results throughout the season, both Verstappen and Hamilton have a firm lead in the championship standings, over 150 points clear of the third highest scoring driver Valterri Bottas. Moreover, the two seem to have brought the majority of points for their respective constructors, with Verstappen at 67.5 percent and Hamilton at 63.2 percent.
 
 ```{r Total Points by Driver and by Constructor}
-# add point finishes in sprint results to race_results
+# add point finishes in sprint qualifying to race_results
 sprint_results_points <- sprint_results %>% filter(PTS>0) 
 race_results <- rbind(race_results,sprint_results_points)
 
@@ -539,9 +508,9 @@ race_points_cum %>%
 ```
 
 ## Points Scored by Race by Driver
-A breakdown of points scored per Grand Prix allows for a more detailed view of how the drivers performed throughout the season. For instance, the troughs on the dark blue line see Verstappen scoring minimal points in Azerbeijan, Great Britain, Hungary, and Italy mostly due to retirements or technical issues. The extended peak from France to Autria represents a particular run of good form. 
+A breakdown of points scored per Grand Prix allows for a more detailed view of how the drivers performed throughout the season. For instance, the troughs on the dark blue line see Verstappen scoring minimal points in Azerbaijan, Great Britain, Hungary, and Italy mostly due to retirements or technical issues. The extended peak from France to Austria represents a particular run of good form. 
 
-On the light blue line, the highest point at the middle shows Lewis Hamilton achieving more points than any other weekend due to a second place finish at the sprint and a victory at the race. The three race peak covering Sao Paolo, Qatar, and Saudi Arabia portrays a slew of good results that helped him catch up to Verstappen in the championship. The datapoints in the middle section represents several mediocre results.
+On the light blue line, the highest point at the middle shows Lewis Hamilton achieving more points than any other weekend due to a second place finish at the sprint qualifying and a victory at the race. The three race peak covering Sao Paolo, Qatar, and Saudi Arabia portrays a slew of good results that helped him catch up to Verstappen in the championship. The datapoints in the middle section represents several mediocre results.
 
 On balance, Verstappen achieves better results more often than Hamilton during the 2021 season. However, his consistently good showings are counteracted by a couple very poor finishes. So although Hamilton does not win as much as Verstappen, he is able to stay in the title fight because his lows are not as low. Also unsurprisingly,  whenever one wins, the other usually picks up a second place finish.
 
@@ -608,12 +577,15 @@ race_points_roll3 %>%
   hui_ggplot
 ```
 
-# Some Key Takeaways [WORK IN PROGRESS]
-hello
+# Some Key Takeaways
 
-# TO SOLVE
-- change in position
-- clean up code.
+* Verstappen has the most wins, most podiums, and highest average race finish position
+* Hamilton tends to take fastest laps towards the end of a race as part of damage limitation
+* Verstappen achieved better results more often than Hamilton
+* Hamilton kept the championship fight alive with consistency (his lows were not as low) and a much greater points haul in the Great Britain GP
+* Verstappen was in peak form during the few races before (France, Styria, Austria) and after (Turkey, USA, Mexico) the mid season
+* Hamilton was in peak form during the last few races of the season (Sao Paolo, Qatar, Saudi Arabia)
+
 
 
 
