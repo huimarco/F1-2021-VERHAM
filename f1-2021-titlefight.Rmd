@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo=TRUE,message=FALSE,warning=FALSE,fig.width=12, fig.he
 # Introduction
 The 2021 Formula One season will be remembered for the close world championship title fight between Max Verstappen and Lewis Hamilton. The two drivers traded blows throughout the year, before Verstappen ultimately took the crown during the last race. In doing so, Verstappen became the first ever dutch driver and the first non-Mercedes driver in the turbo-hybrid era to win the World Championship.
 
-To gain a deeper understanding and visualisation of how the championship battle between the two played out, we performed a bit of data exploration on the results, race by race. Data was scraped from the archives of the official Formula One website, and scripts to do so can be found [here](f1-2021-webscrape.py).
+To gain a deeper understanding and visualisation of how the championship battle between the two played out, we performed a bit of data exploration on the results, race by race. Data was scraped from the archives of the official Formula One website, and scripts to do so can be found on the [github repository](https://github.com/huimarco/f1-2021-titlefight).
 
 # Data Preparation
 We begin by loading in the necessary packages, data sets, plot themes, etc. This preparation work is important because it simplifies much of the code later on.
