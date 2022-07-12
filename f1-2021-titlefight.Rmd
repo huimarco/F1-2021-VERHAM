@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=TRUE,message=FALSE,fig.width=12, fig.height=8)
+knitr::opts_chunk$set(echo=TRUE,message=FALSE,warning=FALSE,fig.width=12, fig.height=8)
 ```
     
 # Introduction
@@ -571,7 +571,7 @@ race_points_roll3 %>%
   
   ggplot() + 
   geom_line(aes(x=gp_name,y=totalPoints_roll3,colour=Driver,group=Driver)) +
-  labs(title='Points Scored by Race by Driver') +
+  labs(title='3 Race Rolling Average Points by Driver') +
   scale_y_continuous(breaks=c(0,1,2,4,6,8,10,12,15,18,25,27),expand=c(0,0)) +
   scale_colour_manual(values=c(mercedes_clr,redbull_clr)) +
   hui_ggplot
