@@ -6,6 +6,6 @@ Python script to scrape data from the official Formula One website can be found 
 
 Raw html file can be found [here](f1-2021-titlefight.html).
 
-Final product posted on the projects section of my [Personal Website](https://huimarco.github.io/).
+Final product posted on the projects section of my [website](https://huimarco.github.io/).
 
 
