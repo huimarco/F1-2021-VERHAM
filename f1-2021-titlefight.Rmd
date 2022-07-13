@@ -36,12 +36,12 @@ library(CGPfunctions)
 
 ```{r Data}
 # load data sets from csv files
-race_results <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/results2021.csv')
-starting_grid <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/starts2021.csv')
-fastest_laps <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/flaps2021.csv')
-sprint_results <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/sprints2021.csv')
-qualis <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/qualis2021.csv')
-gp_names <- read_csv('/Users/marcohui/Desktop/F1 Data Project/f1-2021-titlefight/data/names2021.csv')
+race_results <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/results2021.csv')
+starting_grid <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/starts2021.csv')
+fastest_laps <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/flaps2021.csv')
+sprint_results <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/sprints2021.csv')
+qualis <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/qualis2021.csv')
+gp_names <- read_csv('/Users/marcohui/Desktop/2021titlefight/f1-2021-titlefight/data/names2021.csv')
 
 # factorise gp_names based on race calendar order
 gp_names <- gp_names %>% 
