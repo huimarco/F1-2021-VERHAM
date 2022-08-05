@@ -7,9 +7,9 @@ Data was webscraped from the results archive of the [official Formula One websit
 # final product
 There are two ways to view the final report.
 
-## Option 1:
+`Option 1`
 - Download the [raw HTML file](f1-2021-titlefight.html)
 - Open downloaded file within local desktop
 
-## Option 2:
+`Option 2`
 - View online via projects section of [my personal website](https://www.huimarco.com/files/f1-2021-titlefight.html).
